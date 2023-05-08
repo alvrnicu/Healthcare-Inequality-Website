@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Healthcare Inequality</title>
+  <link href="reset.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="reset-webview.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Raleway:wght@300;500;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="icon" href="images/21112137_0.jpg">
+
+</head>
+
+<body>
+  <br> <br> <br> <br> <br> <br>
+  <div class="navbar" id='nav' style="background-color: black;">
+    <ul>
+      <li><a href="#top"><button>Home</button></a></li>
+      <li><a href='#Statistics'><button>Statistics</button></a></li>
+      <li><a href='#Contact-Me'><button>Contact Me</button></a></li>
+      <li><button id="theme-button">Toggle Dark Mode</button></li>
+    </ul>
+  </div>
+  <div class="header-container" id='about top'>
+    <h1 class='header1'>Silent Crisis in the US</h1>
+    <div class='header-item'>
+      <p>
+        There is a crisis in the United States that is going largely unnoticed by the public, and it is how the care
+        people get varies proportionately to wealth and ethnicity.</p>
+    </div>
+    <div class='header-item'>
+      <img src="images/Cat_Nurse_transparent.png"
+        onerror="this.onerror=null;this.src='images/image-not-found-300x225.jpg'" alt="Cat Dressed as a Nurse.jpg">
+    </div>
+    <div class="header-item">
+      <button id='jumpbutton'><a href='#sources'>Jump to Sources</a></button>
+      <button><a href='#bottom'>Skip to Bottom</a></button>
+    </div>
+  </div>
+  <br>
+  <section class ='scroll-container'>
+    <div class = "scroll-element js-scroll slide-right">
+      <p class="header-p">
+      I am trying to raise awareness on this issue by sharing research and my own personal experiences as an ICU nurse.
+      To
+      start off, we'll have to ask...
+      </p>
+    </div>
+
+  </section>
+
+  </div>
+  <br><br>
+    <div class = "revealable">
+      <h3 class="headline">
+        <b>What <i>is</i> Health Inequality?</b>
+      </h3>
+    </div>
+  </section>
+      <p class='revealable'>
+        According to the World Health Organization, "Health inequities are differences in health status or in the
+        distribution
+        of health resources between different population groups, arising from the social conditions in which people are
+        born,
+        grow, live, work and age."(Health inequities and their causes). Following this idea...
+      </p>
+      
+    <br><br>
+  
+  <div class='revealable'>
+    <h4 class="headline2 revealable" id='Statistics'>Socioeconomic Contributors</h4>
+    <div align='center' class='revealable'>
+      <img src="images/8396-05-Figure-1.png" onerror="this.onerror=null;this.src='images/image-not-found-300x225.jpg'"
+        alt="Health Disparities Table" width="60%">
+    </div>
+    <br>
+    <p class='revealable'>
+      Health<b>care</b> inequality is a difference in care received as a result of those aforementioned differences
+      between different populations, which stem from factors such as those shown in this table:
+    </p><br>
+  </div>
+  </div>
+  <div class='revealable'>
+    <h4 class="headline2 revealable">The Recent Pandemic</h4>
+    <div align='center' class='revealable'>
+      <img src="images/CovidRacialDisparities_Figure-1.png" class='center-img' width="60%">
+    </div>
+    <br>
+    <p class = "revealable">
+Even from the adjusted statistics from the recent pandemic, it can be seen that there is a significant
+        difference
+        in health outcomes between various ethnic groups.</p>
+  </div>
+
+
+  <div class="petition revealable" id="petition" align='center'>
+    <h2>Sign Our Petition 📢</h2>
+    <div class="petition-container">
+      <div class="petition-para">
+        &nbsp; &nbsp; Imagine two patient rooms side by side in a hospital, both filled with their respective families,
+        and each patient has the same illness. The one on the right is filled with cheers of joy and relief. The one on
+        the left is filled with tears. The difference might very well simply be one of healthcare inequality.
+      </div>
+    <div class="signatures" id='signatures-location' ;>
+      <p>🖊️ DJ from Brooklyn supports this.</p>
+      <p>🖊️ Amy from Queens supports this.</p>
+      <p>🖊️ Teresa from Harlem supports this.</p>
+      <p id='new-sig'></p>
+      <p id='counter'>🖊️ 3 people have signed this petition and support this cause.</p>
+    </div>
+  </div>
+    <!--- Sign Petition Form --->
+    <form id="sign-petition" title="sign-petition">
+      <!-- inputs go here -->
+      <label id='fname'>Name:</label>
+      <input type="text" id="name" name="fname">
+      <label id='fhometown'>Hometown:</label>
+      <input type="text" id="hometown" name="fhometown">
+      <label id='femail'>Email:</label>
+      <input type="text" id="email" name="femail">
+    </form>
+    <!--- Sign Now Button --->
+    <button id="sign-now-button">Sign Now</button><br>
+  </div>
+
+<!-- Modal -->
+<div id="thanks-modal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+
+    <div id="modal-text-container">
+      <!-- text here -->
+      <p id = 'thanks-content-modal'>
+
+      </p>
+      <img  id = 'pusheen' src="images/Pusheen TY.gif">
+      <!-- button here (stretch feature) -->
+      <button id = 'close'>X</button>
+    </div>
+    <!-- image here-->
+  </div>
+    
+</div>
+
+
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+  <div class='revealable'>
+    <h4 class="headline2 revealable'">Dr. Ferdinand speaks on the topic</h4>
+    <div align='center'>
+      <iframe width="1120" height="630" src="https://www.youtube.com/embed/uF-DcRm_LLQ" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+  <div align='center' class = 'unrevealable'>
+    <h3 id='sources' class='Sources'><b>Sources and More</b></h3>
+    <li>
+      <ul>
+        <li style="list-style:circle;"><a
+            href="https://sitn.hms.harvard.edu/flash/2020/racial-disparities-in-covid-19/">Racial Disparities in Covid
+            19</a></li><br>
+        <li style="list-style:circle"><a href="https://medicareadvocacy.org/medicare-info/health-care-disparities/">How
+            Racial and Ethnic Disparities Costing the US Billions Anually</a></li><br>
+      </ul>
+    </li>
+  </div>
+  <div class = 'unrevealable' id='Contact-Me'>
+    <p>Email Me At: fake-email@email.com</p>
+  </div>
+  <div class='center-button'>
+    <button><a href='#top'>Jump to the Top!</a></button>
+  </div>
+  <div class='footer1 unrevealable'>
+    <p>Welcome to the site!</p>
+  </div>
+  <script src="index.js"></script>
+
+
+
+
+  
+</body>
+
+</html>
