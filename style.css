@@ -1,0 +1,322 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+a:link {
+  color:blue
+}
+a:visited {
+  color: magenta
+}
+a:hover {
+  color: turquoise  
+}
+a:active {
+  color: midnightblue
+}
+h1 {
+  color: antiquewhite
+}
+h3 {
+  font-family: monospace;
+  text-align: center;
+  background-color: #2b2b2b;
+  color: white;
+}
+h4 {
+  font-weight: 10px;
+  font-family: monospace;
+  text-align: center;
+  background-color: #2b2b2b;
+  color: white;
+  margin-bottom: 5px;
+
+}
+
+p {
+  font-size: 120%;
+  text-align: center;
+}
+
+body {
+  background-color: white;
+  font-family: 'Inter Tight', sans-serif;
+}
+
+button {
+  color:antiquewhite;
+  background-color:#383838;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+}
+
+.headline {
+  background: #2b2b2b;
+  font: white;
+  font-size: 200%;
+}
+
+.headline2 {
+  text-align: center;
+  font-size: 200%;
+}
+
+.site_descript {
+  text-align: center;
+  font-family: monospace;
+}
+
+.Sources {
+  list-style-type: square;
+  list-style-position: outside;
+  text-align: center;
+  font-size: 100%;
+
+}
+.first-section {
+  color: antiquewhite;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 15px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+  background-color: #2b2b2b;
+}
+.header1 {
+  width: auto;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 400;
+  margin: 0;
+  font-size: 300%;
+}
+.header-p {
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 100%;
+  line-height: 25px;
+}
+.center-button {
+  vertical-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.header-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #2b2b2b;
+  padding-top:20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top:45px;
+}
+.header-item:nth-of-type(1) {
+  text-align: center;
+  font-family: 'Inter Tight', sans-serif;
+  color:antiquewhite;
+  font-size: 100%;
+  line-height: 25px;
+  width: auto;
+  word-wrap: break-word;
+  vertical-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.header-item:nth-of-type(2) {
+  align-items: center;
+  width:auto;
+}
+.header-item:nth-of-type(3) {
+  margin-left: auto;
+  margin-right:auto;
+  width:auto;
+  max-width:auto;
+  z-index: 100;
+}
+#bottom .header-item {
+  align-items: center;
+  width:auto;
+}
+.footer1 {
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: slategrey;
+}
+ul>li {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+}
+.navbar {
+  list-style-type: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  z-index: 100;
+}
+#nav .navbar {
+  background-color: #101010;
+}
+.navbar:any-link {
+  display: block;
+  text-decoration: none;
+}
+.navbar:visited {
+  color: turquoise;
+}
+.indiv-list {
+  display: inline-block;
+  text-decoration: none;
+  color: #2b2b2b;
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+#theme-button {
+  color: #grey;
+  border: solid;
+  border-width: 2px;
+}
+.petition-container {
+  display:flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  padding-bottom: 50px;
+}
+.petition-para {
+  width:55%;
+  padding-right:10px;
+  font-size: 130%;
+}
+.petition {
+  background-color: #2b2b2b;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.signatures {
+  font-size: 15px;
+}
+#signatures-location {
+  width: 40%;
+  padding-right:10px;
+  background-color: darkgrey;
+}
+#sign-petition {
+  padding-bottom: 3px;
+  padding-top: 8px;
+  background-color: darkgrey;
+  border: black;
+  padding-bottom: 10px;
+}
+#jumpbutton {
+  padding-bottom: 5px;
+}
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background:pink;
+}
+
+.revealable {
+  position: relative;
+  transform:  translateY(150px);
+  opacity: 0;
+  transition: 'all 5s ease-in-out';
+  padding: 20px;
+}
+
+.active {
+    translateY: 200px;
+    opacity: 1;
+}
+
+.unrevealable {
+  position: relative;
+  opacity: 1;
+  display: block;
+  transform: translateY(125px);
+}
+
+.js-scroll {
+  width: 100%;
+  height: 100%;
+  background-color: #DADADA;
+  transition: background-color 500ms;
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  opacity: 0;
+}
+
+.js-scroll.scrolled {
+  background-color: #DADADA;
+}
+
+.scrolled.slide-right {
+  animation: slide-in-right 1s ease-in-out both;
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.modal {
+  display: none; /* hides the modal from view by default*/
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0,0,0,0.4); /* 40% opacity black - other elements can still be seen */
+  flex-direction: column; /* these flexbox rules center the content on the screen */
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: lightsteelblue; /* update the colors and font sizes as you like */
+  color: black;
+  text-align: center;
+  font-size: 3rem;
+  display: flex; /* adds flexbox to center all items */
+  justify-content: center;
+  align-items: center;
+}
+
+#thanks-modal-content {
+  width: 50rem;
+  height: 50rem;
+  font-size: 200%;
+}
+
+#modal-text-container {
+  display: flex; /* adds flexbox to center the text and buttons (stretch feature) */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#close {
+  color: black;
+  background-color: grey;
+  width: 5%;
+}
